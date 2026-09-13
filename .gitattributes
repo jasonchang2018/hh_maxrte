@@ -1,0 +1,6 @@
+# Don't count notebooks toward repository language statistics
+*.ipynb linguist-detectable=false
+
+# Explicitly recognize SQL and Python
+*.sql linguist-detectable=true
+*.py linguist-detectable=true
