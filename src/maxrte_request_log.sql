@@ -1,0 +1,35 @@
+create table
+    edwprodhh.insurance_discovery.maxrte_request_log
+(
+    PACKET_IDX                  VARCHAR(60),
+    CLIENT_FACILITY             VARCHAR(100),
+    CLIENT                      VARCHAR(15),
+    DEBTOR_ACCOUNT_NUMBER       VARCHAR(50),
+    PATIENT_FIRST_NAME          VARCHAR(100),
+    PATIENT_LAST_NAME           VARCHAR(100),
+    PATIENT_DOB                 DATE,
+    PATIENT_SEX                 VARCHAR(5),
+    PATIENT_SSN                 VARCHAR(255),
+    PATIENT_ADDRESS             VARCHAR(150),
+    CITY                        VARCHAR(50),
+    STATE                       VARCHAR(20),
+    ZIP_CODE                    VARCHAR(16777216),
+    GUARANTOR_FIRST_NAME        VARCHAR(50),
+    GUARANTOR_LAST_NAME         VARCHAR(50),
+    GUARANTOR_SSN               VARCHAR(255),
+    AMOUNT_DUE                  NUMBER(30,2),
+    CURRENT_BALANCE             NUMBER(16,2),
+    ADMIT_DATE                  DATE,
+    DISCHARGE_DATE              DATE,
+    NPI                         VARCHAR(16777216),
+    REQUEST_ID                  VARCHAR(16777216),
+    DEBT_TYPE                   VARCHAR(150),
+    PL_GROUP                    VARCHAR(16777216),
+    DEBTOR_IDX                  VARCHAR(50),
+    UPLOAD_DATE                 DATE,
+    CLIENT_MINIMUM	            NUMBER(18,0),
+    DEBTOR_PRIORITY	            NUMBER(18,0),
+    CLIENT_PRIORITY	            NUMBER(18,0),
+    GLOBAL_PRIORITY	            NUMBER(18,0)
+)
+;
