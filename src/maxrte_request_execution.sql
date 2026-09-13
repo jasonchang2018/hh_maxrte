@@ -1,5 +1,5 @@
 create or replace procedure
-    edwprodhh.pub_jchang.insert_maxrte_log()
+    edwprodhh.insurance_discovery.insert_maxrte_log()
 returns     boolean
 language    sql
 as
@@ -82,9 +82,9 @@ end
 
 
 create or replace task
-    edwprodhh.pub_jchang.sp_insert_maxrte_log
+    edwprodhh.insurance_discovery.sp_insert_maxrte_log
     warehouse = analysis_wh
     schedule = 'USING CRON 0 2 * * MON-FRI America/Chicago'
 as
-call    edwprodhh.pub_jchang.insert_maxrte_log()
+call    edwprodhh.insurance_discovery.insert_maxrte_log()
 ;
